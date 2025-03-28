@@ -5,6 +5,9 @@
 import HelloWorld from './components/HelloWord';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import Frase from './components/Frase';
+import List from './components/List';
+import Item from './components/Item';
 
 import './App.css'
 
@@ -22,13 +25,29 @@ function App() {
 
   const nome = 'Maria';
   return (
-
     // Parte do HTML com logica
     <div className='App'>
       <h1>Olá, React</h1> 
       <p>Meu primeiro App, <strong>{newName.toUpperCase()}</strong></p>
       <p>Soma: {sum(5, 23)}</p>
 
+      <hr />
+      <h2>Codigos no Terminal</h2>
+      <br />
+
+      <div className='CodigosTerminal'>
+        <h3>Iniciar um novo <strong>App React</strong></h3>
+        <code>npm create vite@latest</code> <br />
+        <h3>Dependência</h3>
+        <code>npm install</code> <br />
+
+        <h3>Maneira certa de declarar uma classe do react é assim.</h3>
+        <code>className='App'</code>
+
+        <h3>Quando Agente usar o class="elemento" <br /> aqui no React, ai com certeza vai dá um erro.</h3>
+        <p>dentro do react é uma jeito reservada</p>
+        <code>class=""</code>
+      </div>
       <hr />
 
       <img src={url} alt="Minha Imagem" />
@@ -46,6 +65,24 @@ function App() {
 
       <h2>Parte 2. Trabalhando com props</h2>
       <Pessoa name='Filipe' age='27' job='Programador' photo={url}/>
+
+      <hr />
+      <h2>Inserindo CSS no React (CSS modules)</h2>
+      <Frase/>
+      <Frase/>
+      <hr />
+      <div>
+        <h2>Utilizando React fragments</h2>
+      </div>
+      <List></List>
+      <hr />
+      <h2>Lista 2</h2>
+      <ul>
+        <Item marca='Ferrari'/>
+        <Item marca='Renault'/>
+        <Item marca='Fiat'/>
+      </ul>
+
     </div>
   )
 }

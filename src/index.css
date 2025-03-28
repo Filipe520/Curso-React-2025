@@ -13,6 +13,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App {
+  background-color: rgb(240, 240, 240);
+
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.CodigosTerminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+div {
+  margin: 10px;
+}
+
+h2 {
+  padding: 0px 5px;
+  border-left: 3px solid rgb(255, 0, 0);
+  display: inline-block;
+}
+
+img {
+  border-radius: 10px;
+}
+
+hr {
+  margin: 30px 0;
+
+}
+
 a {
   font-weight: 500;
   color: #646cff;
