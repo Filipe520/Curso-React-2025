@@ -1,4 +1,5 @@
 //import { useState } from 'react'
+import HelloWorld from './components/HelloWord';
 import './App.css'
 // Nessa parte vai ficar as importações
 function App() {
@@ -23,6 +24,10 @@ function App() {
       <hr />
 
       <img src={url} alt="Minha Imagem" />
+
+      <hr />
+
+      <HelloWorld />
 
     </div>
   )
