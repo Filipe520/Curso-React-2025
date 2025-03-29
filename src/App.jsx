@@ -7,7 +7,6 @@ import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
 import List from './components/List';
-import Item from './components/Item';
 
 import './App.css'
 
@@ -40,6 +39,8 @@ function App() {
         <code>npm create vite@latest</code> <br />
         <h3>Dependência</h3>
         <code>npm install</code> <br />
+        <code>npm install prop-types</code>
+
 
         <h3>Maneira certa de declarar uma classe do react é assim.</h3>
         <code>className='App'</code>
@@ -76,12 +77,8 @@ function App() {
       </div>
       <List></List>
       <hr />
-      <h2>Lista 2</h2>
-      <ul>
-        <Item marca='Ferrari'/>
-        <Item marca='Renault'/>
-        <Item marca='Fiat'/>
-      </ul>
+      <h2>Lista</h2>
+      <List></List>
 
     </div>
   )
