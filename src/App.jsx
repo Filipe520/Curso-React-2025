@@ -1,12 +1,14 @@
 // Nessa parte vai ficar as importações
 
-//import { useState } from 'react'
+import { useState } from 'react'
 
 import HelloWorld from './components/HelloWord';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
 import List from './components/List';
+import Evento from './components/EventoClick';
+import Form from './components/Form';
 
 import './App.css'
 
@@ -79,6 +81,18 @@ function App() {
       <hr />
       <h2>Lista</h2>
       <List></List>
+
+      <hr />
+      <h2>Eventos no React (onClick, onChange e onSubmit)</h2>
+
+      <Evento numero='1'></Evento>
+      <Evento numero='2'></Evento>
+
+      <hr />
+      <Form></Form>
+      <hr />
+      <h2>useState na prática</h2>
+
 
     </div>
   )
