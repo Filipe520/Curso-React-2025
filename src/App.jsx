@@ -7,7 +7,7 @@ import Frase from './components/Frase';
 import List from './components/List';
 import Evento from './components/EventoClick';
 import Form from './components/Form';
-import Button from './components/evento/Button';
+import Condicional from './components/condicional';
 
 import './App.css'
 
@@ -25,7 +25,7 @@ function App() {
 
   const nome = 'Maria';
   return (
-    // Parte do HTML com logica
+    // Parte do HTML com logica e componentes
     <div className='App'>
       <section className='sectionAulas'>
         <h1>Olá, React</h1>
@@ -89,11 +89,16 @@ function App() {
       <section className='sectionAulas'>
         <h2>Eventos no React (onClick, onChange e onSubmit)</h2>
         <Evento numero='1'></Evento>
-        <hr />
+      </section>
         <Form></Form>
-        <hr />
+
+      <section className='form2-1'>
+        <h1>Aula - Renderização condicional (if)</h1>
+        <Condicional></Condicional>
       </section>
     </div>
+
+
   )
 }
 // Parte de Exportações

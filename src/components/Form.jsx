@@ -14,7 +14,7 @@ const Form = () => {
         <section>
             <h2>Meu Formulário</h2>
 
-            <form onSubmit={cadastrarUsuario}>
+            <form onSubmit={cadastrarUsuario} id='formInputs'>
                 <section>
                     <label htmlFor="TextInput">Nome Usuário: </label>
                     <input type="text" name="textInput" id="TextInput" required value={name}
@@ -25,7 +25,7 @@ const Form = () => {
                     <input type="password" name="senhaInput" id="senhaInput" placeholder="Digite sua senha..."
                     onChange={(e) => setPassword(e.target.value)} required/>
                 </section>
-                <section>
+                <section className='btn_submit'>
                     <input type="submit" value="Cadastrar" />
                 </section>
             </form>
