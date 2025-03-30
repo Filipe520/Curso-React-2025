@@ -1,10 +1,19 @@
 .fraseContaine {
-    background-color: #686868;
-    border: 1px solid #111;
+    background-color: #dadada;
+    border-bottom: 1px solid #111;
+    border-radius: 5px;
+
+    height: 150px;
 }
 
 .fraseContent {
-    color: #FFF;
-    background-color: #333;
-    margin: 0
+    color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.295));
+    margin: 0;
+
+    font-size: 1em;
+
+    padding: 10px;
+
+    
 }
