@@ -9,6 +9,9 @@ import Evento from './components/EventoClick';
 import Form from './components/Form';
 import Condicional from './components/condicional';
 import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome';
+import {useState} from 'react';
+import Saudacao from './components/SauDacao';
 
 import './App.css'
 
@@ -27,6 +30,8 @@ function App() {
   const nome = 'Maria';
 
   const meusItens = ['React', 'Vue', 'Angular']
+
+  const [nome2, setNome2] = useState();
   return (
     // Parte do HTML com logica e componentes
     <div className='App'>
@@ -105,6 +110,13 @@ function App() {
 
         <OutraLista itens={meusItens}></OutraLista>
         <OutraLista itens={[]}></OutraLista>
+      </section>
+
+      <section className='sectionAulas'>
+        <h2>State Lift</h2>
+
+        <SeuNome setNome2={setNome2}></SeuNome>
+        <Saudacao nome2={nome2}></Saudacao>
       </section>
     </div>
 
