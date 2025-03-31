@@ -8,6 +8,7 @@ import List from './components/List';
 import Evento from './components/EventoClick';
 import Form from './components/Form';
 import Condicional from './components/condicional';
+import OutraLista from './components/OutraLista';
 
 import './App.css'
 
@@ -24,6 +25,8 @@ function App() {
   const url = 'https://placehold.co/600x400';
 
   const nome = 'Maria';
+
+  const meusItens = ['React', 'Vue', 'Angular']
   return (
     // Parte do HTML com logica e componentes
     <div className='App'>
@@ -95,6 +98,13 @@ function App() {
       <section className='form2-1'>
         <h1>Aula - Renderização condicional (if)</h1>
         <Condicional></Condicional>
+      </section>
+
+      <section className='sectionAulas'>
+        <h2>Renderização de listas</h2>
+
+        <OutraLista itens={meusItens}></OutraLista>
+        <OutraLista itens={[]}></OutraLista>
       </section>
     </div>
 
