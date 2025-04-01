@@ -10,8 +10,16 @@ import Form from './components/Form';
 import Condicional from './components/condicional';
 import OutraLista from './components/OutraLista';
 import SeuNome from './components/SeuNome';
-import {useState} from 'react';
+import { useState } from 'react';
 import Saudacao from './components/SauDacao';
+
+import {BrowserRouter as Router, Routes ,Route} from 'react-router-dom';
+
+import Contato from './pages/Contato';
+import Empresa from './pages/Empresa';
+import Home from './pages/Home';
+import NavBar from './components/layout/navBar';
+import Footer from './components/layout/Footer';
 
 import './App.css'
 
@@ -66,20 +74,20 @@ function App() {
 
       <section className='sectionAulas'>
         <h2>Parte 1. Trabalhando com props.</h2>
-        <SayMyName nome="Filipe"/>
-        <SayMyName nome="Matheus"/>
-        <SayMyName nome={nome}/>
+        <SayMyName nome="Filipe" />
+        <SayMyName nome="Matheus" />
+        <SayMyName nome={nome} />
       </section>
 
       <section className='sectionAulas'>
         <h2>Parte 2. Trabalhando com props</h2>
-        <Pessoa name='Filipe' age='27' job='Programador' photo={url}/>
+        <Pessoa name='Filipe' age='27' job='Programador' photo={url} />
       </section>
 
       <section className='sectionAulas'>
         <h2>Inserindo CSS no React (CSS modules)</h2>
-        <Frase/>
-        <Frase/>
+        <Frase />
+        <Frase />
       </section>
 
       <section className='sectionAulas'>
@@ -98,7 +106,7 @@ function App() {
         <h2>Eventos no React (onClick, onChange e onSubmit)</h2>
         <Evento numero='1'></Evento>
       </section>
-        <Form></Form>
+      <Form></Form>
 
       <section className='form2-1'>
         <h1>Aula - Renderização condicional (if)</h1>
@@ -117,6 +125,25 @@ function App() {
 
         <SeuNome setNome2={setNome2}></SeuNome>
         <Saudacao nome2={nome2}></Saudacao>
+      </section>
+
+      <section className='sectionAulas'>
+        <h2>Implementando o React Router</h2>
+
+        <h4>Códigos no Terminal</h4>
+        <code>npm install react-router-dom</code>
+
+        <Router>
+          <NavBar/>
+
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/contato' element={<Contato />}/>
+            <Route path='/empresa' element={<Empresa />}/>
+          </Routes>
+
+          <Footer />
+        </Router>
       </section>
     </div>
 

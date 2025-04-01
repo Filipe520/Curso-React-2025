@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    margin-right: 1rem;
+}
+
+a {
+    color: rgb(231, 129, 129);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(214, 211, 211);
+}
